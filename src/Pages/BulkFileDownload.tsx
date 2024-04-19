@@ -8,7 +8,7 @@ const BulkFileDownload: React.FC = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get<string[]>('http://localhost:8085/api/v1/files/');
+        const response = await axios.get<string[]>('http://localhost:8081/api/v1/files/');
         setFiles(response.data);
       } catch (error) {
         console.error('Error fetching files:', error);

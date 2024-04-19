@@ -19,7 +19,7 @@ const BulkFileUpload: React.FC = () => {
           formData.append('files', files[i]);
         }
 
-        await axios.post('http://localhost:8085/api/v1/files/bulk', formData);
+        await axios.post('http://localhost:8081/api/v1/files/bulk/54', formData);
 
         setMessage('Files uploaded successfully!');
       } catch (error) {

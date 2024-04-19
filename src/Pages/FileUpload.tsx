@@ -17,7 +17,7 @@ const FileUpload: React.FC = () => {
         const formData = new FormData();
         formData.append('file', file);
 
-        await axios.post('http://localhost:8085/api/v1/files/', formData);
+        await axios.post('http://localhost:8081/api/v1/files/54', formData);
 
         setMessage('File uploaded successfully!');
       } catch (error) {
